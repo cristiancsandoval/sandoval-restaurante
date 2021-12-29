@@ -1,0 +1,10 @@
+/**/
+/*DOCUMENTO PRINCIPAL DE ESTILOS DE LA PÁGINA*/
+/*Implementado por medio del compilador SASS*/
+/**/
+/*Importación de elementos de estilos*/
+@import 'base/reseteo';
+@import 'components/header';
+@import 'components/main';
+@import 'components/footer';
+@import 'base/media-query';

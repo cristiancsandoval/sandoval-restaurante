@@ -1,0 +1,26 @@
+/*RESETEO GENERAL DE ESTILOS*/
+
+li, span, a, h1, h2, h3, p{
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    padding: 0;
+    margin: 0;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+img{
+
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}

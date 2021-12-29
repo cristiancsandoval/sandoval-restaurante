@@ -1,0 +1,838 @@
+@charset "UTF-8";
+/**/
+/*DOCUMENTO PRINCIPAL DE ESTILOS DE LA PÁGINA*/
+/*Implementado por medio del compilador SASS*/
+/**/
+/*Importación de elementos de estilos*/
+/*RESETEO GENERAL DE ESTILOS*/
+li, span, a, h1, h2, h3, p {
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/*CONFIGURACIÓN DE ESTILOS SECCION HEADER*/
+/*Importacion de variables*/
+/*VARIABLES DE ESTILOS*/
+/*Colores*/
+/*Fuentes*/
+/*Anchos y altos*/
+/*Tamaños de fuente*/
+/*Padding, margin, border*/
+/*Reutilización de formatos (extends)*/
+main .contacto-datos .subtitulo, main .formulario .subtitulo, main .menu-seccion .menu-subtitulo .subtitulo-texto {
+  font-family: "Nanum Myeongjo", serif;
+  color: #101c21;
+  font-size: 1.05em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  padding: 0.25em;
+}
+
+main .descripcion-principal .descripcion-texto {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+  font-family: "Nanum Myeongjo", serif;
+  color: #101c21;
+  font-size: 1.1em;
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+}
+
+footer .disclaimer-footer .enlaces a:hover p, footer .disclaimer-footer .enlaces a:hover, footer .informacion-footer .redes-sociales ul li:hover a, footer .informacion-footer .redes-sociales ul li:hover .icono, main .indicador ul li a:hover, header .barra-navegacion .menu-navegacion .navbar .container-fluid .active, header .barra-navegacion .menu-navegacion .navbar .container-fluid .nav-link:hover {
+  color: #ec5d33;
+  font-weight: bold;
+}
+
+main .menu-seccion .menu-container .menu-tarjeta:hover, main .linea-fotos .imagen-linea:hover {
+  border: none;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+/*Variables Media Query*/
+header {
+  /*Barra de navegación principal*/
+}
+header .barra-navegacion {
+  width: 100%;
+  padding: 5px 10%;
+  background-color: #ffffff;
+  border-top: #ec5d33 solid 1px;
+  border-bottom: #f4f4f4 solid 1px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 52px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+header .barra-navegacion .logo-titulo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 78px auto;
+  grid-template-rows: 100%;
+}
+header .barra-navegacion .logo-titulo .logo-header {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .barra-navegacion .logo-titulo .titulo {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+header .barra-navegacion .logo-titulo .titulo .contenedor-titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 100%;
+  height: 100%;
+  padding: 0 3%;
+  margin: 0;
+}
+header .barra-navegacion .logo-titulo .titulo .contenedor-titulo .titulo-principal {
+  font-family: "Dancing Script", cursive;
+  font-size: 32.24px;
+  color: #101c21;
+}
+header .barra-navegacion .logo-titulo .titulo .contenedor-titulo .titulo-secundario {
+  font-family: "EB Garamond", serif;
+  font-size: 13.52px;
+  text-transform: uppercase;
+  color: #101c21;
+}
+header .barra-navegacion .menu-navegacion {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .barra-navegacion .menu-navegacion .navbar {
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+header .barra-navegacion .menu-navegacion .navbar .container-fluid {
+  padding: 0;
+  margin: 0;
+}
+header .barra-navegacion .menu-navegacion .navbar .container-fluid .nav-link {
+  color: #101c21;
+  font-family: "EB Garamond", serif;
+  font-size: 13.52px;
+  text-transform: uppercase;
+}
+/*CONFIGURACIÓN ESTILOS DE LAS SECCIONES MAIN*/
+/*Importacion de variables*/
+/*VARIABLES DE ESTILOS*/
+/*Colores*/
+/*Fuentes*/
+/*Anchos y altos*/
+/*Tamaños de fuente*/
+/*Padding, margin, border*/
+/*Reutilización de formatos (extends)*/
+main .contacto-datos .subtitulo, main .formulario .subtitulo, main .menu-seccion .menu-subtitulo .subtitulo-texto {
+  font-family: "Nanum Myeongjo", serif;
+  color: #101c21;
+  font-size: 1.05em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  padding: 0.25em;
+}
+
+main .descripcion-principal .descripcion-texto {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+  font-family: "Nanum Myeongjo", serif;
+  color: #101c21;
+  font-size: 1.1em;
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+}
+
+footer .disclaimer-footer .enlaces a:hover p, footer .disclaimer-footer .enlaces a:hover, footer .informacion-footer .redes-sociales ul li:hover a, footer .informacion-footer .redes-sociales ul li:hover .icono, main .indicador ul li a:hover, header .barra-navegacion .menu-navegacion .navbar .container-fluid .nav-link:hover, header .barra-navegacion .menu-navegacion .navbar .container-fluid .active {
+  color: #ec5d33;
+  font-weight: bold;
+}
+
+main .menu-seccion .menu-container .menu-tarjeta:hover, main .linea-fotos .imagen-linea:hover {
+  border: none;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+/*Variables Media Query*/
+main {
+  background-color: #ffffff;
+  /*Banner al inicio de cada sección main*/
+  /*SECCIÓN MAIN DE LA PÁGINA DE INICIO*/
+  /*FIN SECCIÓN MAIN DE LA PÁGINA DE INICIO*/
+  /*SECCIÓN MAIN DE LA PÁGINA MENÚ*/
+  /*FINSECCIÓN MAIN DE LA PÁGINA MENÚ*/
+  /*SECCIÓN MAIN DE LA PÁGINA GALERÍA*/
+  /**/
+  /*SECCIÓN MAIN DE LAS PÁGINAS RESERVAS Y CONTACTO*/
+  /*FIN SECCIÓN MAIN DE LAS PÁGINAS RESERVAS Y CONTACTO*/
+}
+main section {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+main .banner {
+  width: 100%;
+  padding-top: 62px;
+  background-image: url("../imagenes/banner/banner-uno.png");
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main .banner .banner-texto {
+  width: 100%;
+  margin: 1.5em 0;
+  padding: 0 2%;
+  font-family: "EB Garamond", serif;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #101c21;
+}
+main .divisor {
+  width: 100%;
+  height: 20vh;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+main .divisor-inicio {
+  background-image: url("../imagenes/banner/divisor-inicio.png");
+}
+main .divisor-general {
+  background-image: url("../imagenes/menu/menu-salmon.png");
+}
+main .linea-fotos {
+  width: 100%;
+  padding: 0.6em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #101c21;
+}
+main .linea-fotos .imagen-linea {
+  width: 390px;
+  height: 260px;
+  margin: 0.5em 0.3em;
+  background-size: 100%;
+  border-radius: 0 10px;
+}
+main .linea-fotos .imagen-linea:hover .texto-imagen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "EB Garamond", serif;
+  color: #101c21;
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #f4f4f4;
+  border-radius: 0 10px;
+  opacity: 90%;
+}
+main .linea-fotos .texto-imagen {
+  display: none;
+}
+main .linea-fotos .imagen-linea-uno {
+  background-image: url("../imagenes/menu/menu-sopa.png");
+}
+main .linea-fotos .imagen-linea-dos {
+  background-image: url("../imagenes/galeria/galeria-cocina.png");
+}
+main .linea-fotos .imagen-linea-tres {
+  background-image: url("../imagenes/galeria/galeria-mesero.png");
+}
+main .resenas {
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+  background-color: #efe3de;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .resenas .resenas-icono {
+  width: 40px;
+}
+main .resenas .carousel-item {
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .resenas .carousel-item .resena-titulo {
+  font-family: "Nanum Myeongjo", serif;
+  padding: 0.2em 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #101c21;
+}
+main .resenas .carousel-item .resena-texto {
+  font-family: "EB Garamond", serif;
+  padding: 0.1em 0;
+  font-size: 1.4em;
+  color: #101c21;
+  text-align: center;
+}
+main .resenas .carousel-item .resena-autor {
+  font-family: "Dancing Script", cursive;
+  padding: 0.1em 0;
+  font-size: 1.4em;
+  color: #101c21;
+  text-align: center;
+}
+main .menu-seccion {
+  padding-top: 1em;
+}
+main .menu-seccion .menu-subtitulo {
+  border-bottom: solid 1px #ffffff;
+  background-color: #f4f4f4;
+  position: sticky;
+  top: 62px;
+  z-index: 9;
+}
+main .menu-seccion .menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #f4f4f4;
+}
+main .menu-seccion .menu-container .menu-tarjeta {
+  margin: 0.5em;
+  background-color: #ffffff;
+  border-radius: 0 20px;
+}
+main .menu-seccion .menu-container .menu-tarjeta .card-img-top {
+  border-radius: 0 20px;
+}
+main .menu-seccion .menu-container .menu-tarjeta .card-title {
+  font-family: "Nanum Myeongjo", serif;
+  width: 100%;
+  font-size: 1.1em;
+  text-align: center;
+  color: #101c21;
+  font-weight: bold;
+}
+main .menu-seccion .menu-container .menu-tarjeta .card-text {
+  color: #101c21;
+  font-size: 1.1em;
+  font-family: "EB Garamond", serif;
+  text-align: center;
+}
+main .menu-seccion .menu-container .menu-tarjeta .menu-precio {
+  padding: 0 0.3em;
+  color: #101c21;
+  background-color: #efe3de;
+  border-radius: 0 5px;
+}
+main .indicador {
+  position: sticky;
+  bottom: 0;
+  z-index: 9;
+}
+main .indicador ul {
+  width: 100%;
+  margin: 0;
+  background-color: #f4f4f4;
+  border: solid 1px #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .indicador ul li {
+  padding: 0.3em;
+  margin: 0 0.5em;
+}
+main .indicador ul li a {
+  width: 100%;
+  color: #101c21;
+  font-family: "EB Garamond", serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+main .galeria-container {
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+}
+main .formulario {
+  margin: 1.5em 0;
+}
+main .formulario .subtitulo {
+  border-top: solid #f4f4f4 2px;
+}
+main .formulario .formulario-elemento {
+  width: 100%;
+  padding: 0.2em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .formulario .formulario-elemento h4 {
+  width: 60%;
+  margin-top: 0.3em;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 1.1em;
+  text-align: left;
+  color: #101c21;
+  border-top: solid #f4f4f4 2px;
+}
+main .formulario .formulario-elemento input {
+  width: 60%;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 1em;
+  text-align: left;
+  background-color: #f4f4f4;
+  color: #101c21;
+  border: #efe3de;
+  border-radius: 5px;
+}
+main .formulario .formulario-elemento .input-boton {
+  width: 80px;
+  padding: 0.2em;
+  margin: 0.5em 0;
+  color: #efe3de;
+  text-align: center;
+  background-color: #101c21;
+}
+main .formulario .formulario-elemento .input-boton:hover {
+  background-color: #ec5d33;
+}
+main .formulario .formulario-elemento .formulario-mensaje {
+  height: 4.4em;
+}
+main .contacto-datos {
+  padding: 1em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #efe3de;
+}
+main .contacto-datos p {
+  font-family: "Nanum Myeongjo", serif;
+  color: #101c21;
+  font-size: 1.1em;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+/*CONFIGURACIÓN GENERAL DE ESTILOS DE LAS SECCIONES DEL PIE DE PÁGINA*/
+/*Importacion de variables*/
+/*VARIABLES DE ESTILOS*/
+/*Colores*/
+/*Fuentes*/
+/*Anchos y altos*/
+/*Tamaños de fuente*/
+/*Padding, margin, border*/
+/*Reutilización de formatos (extends)*/
+main .menu-seccion .menu-subtitulo .subtitulo-texto, main .formulario .subtitulo, main .contacto-datos .subtitulo {
+  font-family: "Nanum Myeongjo", serif;
+  color: #101c21;
+  font-size: 1.05em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  padding: 0.25em;
+}
+
+main .descripcion-principal .descripcion-texto {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+  font-family: "Nanum Myeongjo", serif;
+  color: #101c21;
+  font-size: 1.1em;
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+}
+
+footer .disclaimer-footer .enlaces a:hover p, footer .disclaimer-footer .enlaces a:hover, footer .informacion-footer .redes-sociales ul li:hover a, footer .informacion-footer .redes-sociales ul li:hover .icono, header .barra-navegacion .menu-navegacion .navbar .container-fluid .nav-link:hover, header .barra-navegacion .menu-navegacion .navbar .container-fluid .active, main .indicador ul li a:hover {
+  color: #ec5d33;
+  font-weight: bold;
+}
+
+main .linea-fotos .imagen-linea:hover, main .menu-seccion .menu-container .menu-tarjeta:hover {
+  border: none;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+/*Variables Media Query*/
+footer {
+  background-color: #101c21;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .ubicacion-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+footer .ubicacion-footer .ubicacion-descripcion {
+  width: 100%;
+  color: #efe3de;
+  font-family: "EB Garamond", serif;
+  font-size: 1.2em;
+  text-align: center;
+  background-color: #ec5d33;
+}
+footer .ubicacion-footer iframe {
+  width: 100%;
+}
+footer .informacion-footer {
+  width: 100%;
+  padding: 1em 0;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+footer .informacion-footer .logo-titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .informacion-footer .logo-titulo .logo-imagen {
+  width: 85px;
+  margin-right: 10px;
+}
+footer .informacion-footer .logo-titulo .titulo .contenedor-titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .informacion-footer .logo-titulo .titulo .contenedor-titulo .titulo-principal {
+  font-family: "Dancing Script", cursive;
+  font-size: 34px;
+  color: #efe3de;
+  text-align: left;
+}
+footer .informacion-footer .logo-titulo .titulo .contenedor-titulo .titulo-secundario {
+  font-family: "EB Garamond", serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #efe3de;
+  text-align: left;
+}
+footer .informacion-footer .redes-sociales ul {
+  width: 100%;
+  padding: 0.25em 0;
+  margin: 0.25em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer .informacion-footer .redes-sociales ul li {
+  padding: 0 0.5em;
+}
+footer .informacion-footer .redes-sociales ul li .icono {
+  color: #efe3de;
+  padding: 0 0.2em;
+}
+footer .informacion-footer .redes-sociales ul li a {
+  color: #efe3de;
+  font-family: "Nanum Myeongjo", serif;
+}
+footer .informacion-footer .informacion-contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+footer .informacion-footer .informacion-contacto p {
+  padding: 0 0.5em;
+  color: #efe3de;
+  font-family: "Nanum Myeongjo", serif;
+  text-align: center;
+}
+footer .disclaimer-footer {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .disclaimer-footer p {
+  width: 100%;
+  text-align: center;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 0.9em;
+  color: #101c21;
+}
+footer .disclaimer-footer .enlaces {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .disclaimer-footer .enlaces a {
+  padding: 0 0.3em;
+  color: #101c21;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/*IMPLEMENTACIÓN DE MEDIA QUERY*/
+/*Importación de variables*/
+/*VARIABLES DE ESTILOS*/
+/*Colores*/
+/*Fuentes*/
+/*Anchos y altos*/
+/*Tamaños de fuente*/
+/*Padding, margin, border*/
+/*Reutilización de formatos (extends)*/
+main .menu-seccion .menu-subtitulo .subtitulo-texto, main .formulario .subtitulo, main .contacto-datos .subtitulo {
+  font-family: "Nanum Myeongjo", serif;
+  color: #101c21;
+  font-size: 1.05em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  padding: 0.25em;
+}
+
+main .descripcion-principal .descripcion-texto {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+  font-family: "Nanum Myeongjo", serif;
+  color: #101c21;
+  font-size: 1.1em;
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+}
+
+header .barra-navegacion .menu-navegacion .navbar .container-fluid .nav-link:hover, header .barra-navegacion .menu-navegacion .navbar .container-fluid .active, main .indicador ul li a:hover, footer .informacion-footer .redes-sociales ul li:hover .icono, footer .informacion-footer .redes-sociales ul li:hover a, footer .disclaimer-footer .enlaces a:hover, footer .disclaimer-footer .enlaces a:hover p {
+  color: #ec5d33;
+  font-weight: bold;
+}
+
+main .linea-fotos .imagen-linea:hover, main .menu-seccion .menu-container .menu-tarjeta:hover {
+  border: none;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+/*Variables Media Query*/
+/*Media Query Tablet*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  /*Configuración sección header*/
+  header .barra-navegacion {
+    padding: 0.7% 7%;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 100%;
+  }
+  header .menu-navegacion .navbar .container-fluid .offcanvas {
+    width: 40%;
+  }
+
+  /*Configuración sección main*/
+  main .banner {
+    background-size: auto;
+  }
+  main .divisor {
+    background-size: auto;
+    background-position: top;
+  }
+  main section {
+    padding-right: 7%;
+    padding-left: 7%;
+  }
+  main .linea-fotos .imagen-linea {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  main .linea-fotos .imagen-linea .texto-imagen {
+    width: 100%;
+    height: auto;
+    padding: 0.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "EB Garamond", serif;
+    color: #101c21;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: solid #f4f4f4 2px;
+    border-radius: 0 10px;
+  }
+  main .resenas .carousel-item {
+    padding: 0 5%;
+  }
+  main .galeria-container {
+    padding: 1em 2%;
+  }
+  main .formulario .formulario-elemento h4 {
+    width: 80%;
+  }
+  main .formulario .formulario-elemento input {
+    width: 80%;
+  }
+}
+/*Media Query Mobile*/
+@media only screen and (max-width: 400px) {
+  /*Configuración sección header*/
+  header .barra-navegacion {
+    padding: 0.7% 4%;
+    display: grid;
+    grid-template-columns: auto 35px;
+    grid-template-rows: 100%;
+  }
+  header .barra-navegacion .logo-titulo {
+    display: grid;
+    grid-template-columns: 60px auto;
+    grid-template-rows: 100%;
+  }
+  header .barra-navegacion .logo-titulo .titulo .contenedor-titulo .titulo-principal {
+    font-size: 32px;
+  }
+  header .barra-navegacion .logo-titulo .titulo .contenedor-titulo .titulo-secundario {
+    font-size: 12.5px;
+  }
+  header .barra-navegacion .menu-navegacion .navbar .container-fluid .offcanvas {
+    width: 50%;
+  }
+  header .barra-navegacion .menu-navegacion .navbar .container-fluid .navbar-toggler {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .barra-navegacion .menu-navegacion .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  /*Configuración sección main*/
+  main .banner {
+    background-size: auto;
+  }
+  main .divisor {
+    background-size: auto;
+    background-position: top;
+  }
+  main section {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+  main section:first-child {
+    padding-top: 50px;
+  }
+  main .linea-fotos .imagen-linea {
+    width: 240px;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  main .linea-fotos .imagen-linea .texto-imagen {
+    width: 100%;
+    height: auto;
+    padding: 0.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "EB Garamond", serif;
+    color: #101c21;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: solid #f4f4f4 2px;
+    border-radius: 0 10px;
+  }
+  main .resenas .carousel-item {
+    padding: 0;
+  }
+  main .menu-seccion .menu-subtitulo {
+    position: sticky;
+    top: 50px;
+  }
+  main .galeria-container {
+    padding: 1em 1%;
+  }
+  main .formulario .formulario-elemento h4 {
+    width: 95%;
+  }
+  main .formulario .formulario-elemento input {
+    width: 95%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

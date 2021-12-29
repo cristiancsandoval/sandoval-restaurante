@@ -1,0 +1,285 @@
+/*IMPLEMENTACIÓN DE MEDIA QUERY*/
+
+/*Importación de variables*/
+@import '../base/variables';
+
+/*Media Query Tablet*/
+@media only screen and (min-width:401px) and (max-width:960px){
+
+    /*Configuración sección header*/
+    header{
+
+        .barra-navegacion{
+
+            padding: 0.7% $padding-lateral-mq-tablet;
+
+            display: grid;
+            grid-template-columns: 90% 10%;
+            grid-template-rows: 100%;
+
+        }
+
+        .menu-navegacion{
+
+            .navbar{
+
+                .container-fluid{
+
+                    .offcanvas{
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+    
+    /*Configuración sección main*/
+    main{
+
+        .banner{
+            background-size:auto;
+        }
+
+        .divisor{
+            background-size:auto;
+            background-position: top;
+        }
+
+        section{
+
+            padding-right: $padding-lateral-mq-tablet;
+            padding-left: $padding-lateral-mq-tablet;
+    
+        }
+
+        .linea-fotos{
+
+            .imagen-linea{
+                    
+                width: 300px;
+                height: 200px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-end;
+
+                .texto-imagen{
+
+                    width: 100%;
+                    height: auto;
+
+                    padding: 0.3em;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+                    @include fuentes(subtitulo);
+                    color: map-get($colores , verde-fuerte );
+                    font-size: 1em;
+                    text-align: center;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                
+                    background-color: map-get($colores , blanco );
+                    border: $borde-general;
+                    border-radius: 0 10px;
+
+                }
+            }
+        }
+
+        .resenas{
+
+            .carousel-item{
+                padding: 0 5%;
+            }
+
+        }
+
+        .galeria-container{
+            padding: 1em 2%;
+        }
+
+        .formulario{
+
+            .formulario-elemento{
+
+                h4{
+                    width: 80%;
+                }
+
+                input{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+/*Media Query Mobile*/
+@media only screen and (max-width:400px){
+
+    /*Configuración sección header*/
+    header{
+
+        .barra-navegacion{
+
+            padding: 0.7% $padding-lateral-mq-mobile;
+
+            display: grid;
+            grid-template-columns: auto 35px;
+            grid-template-rows: 100%;
+
+            .logo-titulo{
+
+                display: grid;
+                grid-template-columns: $ancho-logo-header-mq-mobile auto;
+                grid-template-rows: 100%;
+
+                .titulo{
+
+                    .contenedor-titulo{
+
+                        .titulo-principal{
+                            font-size: $tamano-titulo-principal-mq-mobile;
+                        }
+
+                        .titulo-secundario{
+                            font-size: $tamano-titulo-secundario-mq-mobile;
+                        }
+                    }
+                }
+            }
+
+            .menu-navegacion{
+
+                .navbar{
+
+                    .container-fluid{
+
+                        .offcanvas{
+                            width: 50%;
+                        }
+
+                        .navbar-toggler{
+
+                            width: 35px;
+                            height: 35px;
+
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                            .navbar-toggler-icon{
+
+                                width: 25px;
+                                height: 25px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    /*Configuración sección main*/
+    main{
+
+        .banner{
+            background-size:auto;
+        }
+
+        .divisor{
+
+            background-size:auto;
+            background-position: top;
+
+        }
+
+        section{
+
+            padding-right: $padding-lateral-mq-mobile;
+            padding-left: $padding-lateral-mq-mobile;
+    
+        }
+
+        section:first-child{
+            padding-top: $margin-superior-mq-mobile;
+        }
+
+        .linea-fotos{
+            
+            .imagen-linea{
+                    
+                width: 240px;
+                height: 160px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-end;
+
+                .texto-imagen{
+
+                    width: 100%;
+                    height: auto;
+
+                    padding: 0.3em;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+                    @include fuentes(subtitulo);
+                    color: map-get($colores , verde-fuerte );
+                    font-size: 1em;
+                    text-align: center;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                
+                    background-color: map-get($colores , blanco );
+                    border: $borde-general;
+                    border-radius: 0 10px;
+
+                }
+            }
+        }
+
+        .resenas{
+
+            .carousel-item{
+                padding: 0;
+            }
+        }
+
+        .menu-seccion{
+
+            .menu-subtitulo{
+
+                position: sticky;
+                top: $margin-superior-mq-mobile;
+
+            }
+        }
+
+        .galeria-container{
+            padding: 1em 1%;
+        }
+
+        .formulario{
+
+            .formulario-elemento{
+
+                h4{
+                    width: 95%;
+                }
+
+                input{
+                    width: 95%;
+                }
+            }
+        }
+    }
+}

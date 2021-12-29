@@ -1,0 +1,418 @@
+/*CONFIGURACIÓN ESTILOS DE LAS SECCIONES MAIN*/
+
+/*Importacion de variables*/
+@import '../base/variables';
+
+main{
+
+    background-color: map-get($colores , blanco );
+
+    section{
+        padding-right: $padding-lateral;
+        padding-left: $padding-lateral;
+    }
+
+    /*Banner al inicio de cada sección main*/
+    .banner{
+
+        width: 100%;
+        padding-top: $margin-superior;
+
+        background-image: url("../imagenes/banner/banner-uno.png");
+        background-position: center;
+        background-size: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .banner-texto{
+
+            width: 100%;
+            margin: 1.5em 0;
+            padding: 0 2%;
+            @include fuentes(subtitulo);
+            font-size: 1.5em;
+            text-align: center;
+            text-transform: uppercase;
+            color: map-get($colores , verde-fuerte );
+
+        }
+    }
+
+    .descripcion-principal{
+
+        .descripcion-texto{
+            @extend %parrafo-general;
+        }
+    }
+
+    .divisor{
+
+        width: 100%;
+        height: 20vh;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 100%;
+
+    }
+
+    .divisor-inicio{
+      background-image: url("../imagenes/banner/divisor-inicio.png");
+    }
+
+    .divisor-general{
+        background-image: url("../imagenes/menu/menu-salmon.png");
+    }
+
+    /*SECCIÓN MAIN DE LA PÁGINA DE INICIO*/
+    .linea-fotos{
+
+        width: 100%;
+        padding: 0.6em 0;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        background-color: map-get($colores , verde-fuerte);        
+
+        .imagen-linea{
+
+            width: 390px;
+            height: 260px;
+            margin: 0.5em 0.3em;
+            background-size: 100%;
+            border-radius: 0 10px;
+
+            &:hover{
+
+                @extend %hover-recuadros;
+
+                .texto-imagen{
+
+                    width: 100%;
+                    height: 100%;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+                    @include fuentes(subtitulo);
+                    color: map-get($colores , verde-fuerte );
+                    font-size: 1em;
+                    text-align: center;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                
+                    background-color: map-get($colores , blanco-senales );
+                    border-radius: 0 10px;
+                    opacity: 90%;
+
+                }
+            }
+        }
+
+        .texto-imagen{
+            display: none;
+        }
+
+        .imagen-linea-uno{
+            background-image: url("../imagenes/menu/menu-sopa.png");
+        }
+
+        .imagen-linea-dos{
+            background-image: url("../imagenes/galeria/galeria-cocina.png" );
+        }
+
+        .imagen-linea-tres{
+            background-image: url("../imagenes/galeria/galeria-mesero.png");
+        }
+    }
+    
+    .resenas{
+
+        padding-top: 1em; 
+        padding-bottom: 1.5em;
+
+        background-color: map-get($colores , salmon-claro );
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .resenas-icono{
+            width: 40px;
+        }
+
+        .carousel-item{
+
+            padding: 0 10%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .resena-titulo{
+
+                @include fuentes(general);
+                padding: 0.2em 0;
+                font-size: 1.4em;
+                font-weight: bold;
+                color: map-get($colores , verde-fuerte );
+
+            }
+
+            .resena-texto{
+
+                @include fuentes(subtitulo);
+                padding: 0.1em 0;
+                font-size: 1.4em;
+                color: map-get($colores , verde-fuerte );
+                text-align: center;
+
+            }
+
+            .resena-autor{
+
+                @include fuentes(titulo);
+                padding: 0.1em 0;
+                font-size: 1.4em;
+                color: map-get($colores , verde-fuerte );
+                text-align: center;
+
+            }
+        }
+    }
+    /*FIN SECCIÓN MAIN DE LA PÁGINA DE INICIO*/
+
+    /*SECCIÓN MAIN DE LA PÁGINA MENÚ*/
+    .menu-seccion{
+
+        padding-top: 1em;
+
+        .menu-subtitulo{
+
+            border-bottom: solid 1px map-get($colores , blanco);
+            background-color: map-get($colores , blanco-senales );
+
+            position: sticky;
+            top: $margin-superior;
+            z-index: 9;
+
+            .subtitulo-texto{
+                @extend %subtitulo-general;
+            }
+        }
+
+        .menu-container{
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+
+            background-color: map-get($colores , blanco-senales );
+
+            .menu-tarjeta{
+
+                margin: 0.5em;
+                background-color: map-get($colores , blanco);
+                border-radius: 0 20px;            
+
+                .card-img-top{
+                    border-radius: 0 20px;
+                }
+
+                .card-title{
+
+                    @include fuentes(general);
+                    width: 100%;
+                    font-size: 1.1em;
+                    text-align: center;
+                    color: map-get($colores , verde-fuerte );
+                    font-weight: bold;
+
+                }
+
+                .card-text{
+
+                    color: map-get($colores ,verde-fuerte );
+                    font-size: 1.1em;
+                    @include fuentes(subtitulo);
+                    text-align: center;
+
+                }
+
+                .menu-precio{
+
+                    padding: 0 0.3em;
+                    color: map-get($colores , verde-fuerte );
+                    background-color: map-get($colores , salmon-claro );
+                    border-radius: 0 5px;
+
+                }
+
+                &:hover{
+                    @extend %hover-recuadros;
+                }
+            }
+        }
+    }
+
+    .indicador{
+
+        position: sticky;
+        bottom: 0;
+        z-index: 9;
+
+        ul{
+
+            width: 100%;
+            margin: 0;
+
+            background-color: map-get($colores , blanco-senales);
+            border: solid 1px map-get($colores , blanco);
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            li{
+
+                padding: 0.3em;
+                margin: 0 0.5em;
+
+                a{
+
+                    width: 100%;
+                    color: map-get($colores , verde-fuerte );
+                    @include fuentes(subtitulo);
+                    font-size: 0.9em;
+                    font-weight: bold;
+                    text-align: center;
+                    text-transform: uppercase;
+
+                    &:hover{
+                        @extend %hover-enlaces;
+                    }
+                }
+            }
+        }
+    }
+    /*FINSECCIÓN MAIN DE LA PÁGINA MENÚ*/
+
+    /*SECCIÓN MAIN DE LA PÁGINA GALERÍA*/
+    .galeria-container{
+
+        padding-top: 1em;
+        padding-bottom: 1.5em;
+
+    }
+    /**/
+
+    /*SECCIÓN MAIN DE LAS PÁGINAS RESERVAS Y CONTACTO*/
+    .formulario{
+
+        margin: 1.5em 0;
+
+        .subtitulo{
+
+            @extend %subtitulo-general;
+            border-top: $borde-general;
+
+        }
+
+        .formulario-elemento{
+
+            width: 100%;
+            padding: 0.2em 0;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h4{
+
+                width: 60%;
+                margin-top: 0.3em;
+
+                @include fuentes(general);
+                font-size: 1.1em;
+                text-align: left;
+                color: map-get($colores , verde-fuerte);
+                border-top: $borde-general;
+
+            }
+
+            input{
+
+                width: 60%;
+
+                @include fuentes(general);
+                font-size: 1em;
+                text-align: left;
+                background-color: map-get($colores , blanco-senales);
+                color: map-get($colores , verde-fuerte);
+
+                border: map-get($colores , salmon-claro );
+                border-radius: 5px;
+
+            }
+
+            .input-boton{
+
+                width: 80px;
+                padding: 0.2em;
+                margin: 0.5em 0;
+                color: map-get($colores , salmon-claro);
+                text-align: center;
+                background-color: map-get($colores , verde-fuerte);
+
+                &:hover{
+                    background-color: map-get($colores , salmon-fuerte);
+                }
+
+            }
+
+            .formulario-mensaje{
+                height: 4.4em;
+            }
+        }
+    }
+
+    .contacto-datos{
+
+        padding: 1em 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        background-color: map-get($colores , salmon-claro );
+
+        .subtitulo{
+            @extend %subtitulo-general;
+        }
+
+        p{
+
+            @include fuentes(general);
+            color: map-get($colores , verde-fuerte );
+            font-size: 1.1em;
+            width: 100%;
+            height: 100%;
+            text-align:center;
+
+        }
+
+    }
+    /*FIN SECCIÓN MAIN DE LAS PÁGINAS RESERVAS Y CONTACTO*/
+}

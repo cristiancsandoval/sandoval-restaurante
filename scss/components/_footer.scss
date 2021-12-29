@@ -1,0 +1,203 @@
+/*CONFIGURACIÓN GENERAL DE ESTILOS DE LAS SECCIONES DEL PIE DE PÁGINA*/
+
+/*Importacion de variables*/
+@import '../base/variables';
+
+footer{
+
+    background-color: map-get($colores , verde-fuerte );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .ubicacion-footer{
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        .ubicacion-descripcion{
+
+            width: 100%;
+
+            color: map-get($colores , salmon-claro );
+            @include fuentes(subtitulo);
+            font-size: 1.2em;
+            text-align: center;
+
+            background-color: map-get($colores , salmon-fuerte );
+
+        }
+
+        iframe{
+            width: 100%;
+        }
+    }
+
+    .informacion-footer{
+
+        width: 100%;
+
+        padding: 1em 0;
+        
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+
+        .logo-titulo{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .logo-imagen{
+
+                width: 85px;
+                margin-right: 10px;
+
+            }
+
+            .titulo{
+
+                .contenedor-titulo{
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .titulo-principal{
+
+                        @include fuentes(titulo);
+                        font-size: 34px;
+                        color: map-get($colores , salmon-claro );
+                        text-align: left;
+
+                    }
+
+                    .titulo-secundario{
+
+                        @include fuentes(subtitulo);
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        color: map-get($colores , salmon-claro );
+                        text-align: left;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        .redes-sociales{
+
+            ul{
+                
+                width: 100%;
+
+                padding: 0.25em 0;
+                margin: 0.25em 0;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                li{
+
+                    padding: 0 0.5em;
+
+                    .icono{
+                        color: map-get($colores , salmon-claro );
+                        padding: 0 0.2em;
+                    }
+
+                    a{
+                        color: map-get($colores , salmon-claro );
+                        @include fuentes(general);
+                    }
+
+                    &:hover{
+
+                        .icono{
+                            @extend %hover-enlaces;
+                        }
+    
+                        a{
+                            @extend %hover-enlaces;
+                        }
+                    }
+                }
+            }
+        }
+
+        .informacion-contacto{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: space-between;
+            flex-wrap: wrap;
+
+            p{
+                
+                padding: 0 0.5em;
+
+                color: map-get($colores , salmon-claro );
+                @include fuentes(general);
+                text-align: center;
+
+            }
+        }
+    }
+
+    .disclaimer-footer{
+
+        width: 100%;
+
+        background-color: map-get($colores , blanco );
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p{
+            width: 100%;
+            text-align: center;
+            @include fuentes(general);
+            font-size: 0.9em;
+            color: map-get($colores , verde-fuerte );
+
+        }
+
+        .enlaces{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            a{
+                
+                padding: 0 0.3em;
+
+                color: map-get($colores , verde-fuerte );
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                &:hover{
+
+                    @extend %hover-enlaces;
+                    
+                    p{
+                        @extend %hover-enlaces;
+                    }
+                }
+            }
+        }
+    }
+}
