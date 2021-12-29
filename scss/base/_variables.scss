@@ -61,7 +61,7 @@ $borde-general: solid map-get($colores , blanco-senales) 2px;
     padding: 0.5em 0;
     @include fuentes(general);
     color: map-get($colores , verde-fuerte );
-    font-size: 1.1em;
+    font-size: 1.2em;
     width: 100%;
     height: 100%;
     text-align:justify;
