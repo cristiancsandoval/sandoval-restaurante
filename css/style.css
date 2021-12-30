@@ -239,10 +239,11 @@ main .banner .banner-texto {
 }
 main .divisor {
   width: 100%;
-  height: 20vh;
+  height: 30vh;
   background-position: center;
   background-attachment: fixed;
   background-size: 100%;
+  opacity: 90%;
 }
 main .divisor-inicio {
   background-image: url("../imagenes/banner/divisor-inicio.png");
