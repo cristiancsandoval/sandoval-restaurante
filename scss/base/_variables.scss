@@ -27,7 +27,7 @@ $colores:(
 }
 
 /*Anchos y altos*/
-$alto-barra-navegacion:52px;
+$alto-barra-navegacion: 52px;
 $ancho-logo-header: $alto-barra-navegacion*1.5;
 
 /*Tamaños de fuente*/
@@ -51,7 +51,7 @@ $borde-general: solid map-get($colores , blanco-senales) 2px;
     text-transform: uppercase;
     width: 100%;
     height: 100%;
-    padding: 0.25em;
+    padding: 0.4em;
 
 }
 
@@ -88,6 +88,5 @@ $padding-lateral-mq-tablet: 7%;
 $padding-lateral-mq-mobile: 4%;
 $ancho-logo-header-mq-mobile: 60px;
 $tamano-titulo-principal-mq-mobile: 32px;
-$tamano-titulo-secundario-mq-mobile: 12.5px;
-$alto-barra-navegacion-mq-mobile: $ancho-logo-header-mq-mobile/1.5;
-$margin-superior-mq-mobile: $alto-barra-navegacion-mq-mobile + 10px;
+$tamano-titulo-secundario-mq-mobile: 12px;
+$margin-superior-mq-mobile: $tamano-titulo-principal-mq-mobile + $tamano-titulo-secundario-mq-mobile + 12px;

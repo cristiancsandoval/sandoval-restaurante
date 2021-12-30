@@ -87,6 +87,10 @@ main{
             background-size: 100%;
             border-radius: 0 10px;
 
+            .texto-imagen{
+                display: none;
+            }
+
             &:hover{
 
                 @extend %hover-recuadros;
@@ -113,10 +117,6 @@ main{
 
                 }
             }
-        }
-
-        .texto-imagen{
-            display: none;
         }
 
         .imagen-linea-uno{
@@ -266,7 +266,7 @@ main{
         }
     }
 
-    .indicador{
+    .menu-barra-nav{
 
         position: sticky;
         bottom: 0;

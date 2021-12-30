@@ -45,7 +45,7 @@ main .contacto-datos .subtitulo, main .formulario .subtitulo, main .menu-seccion
   text-transform: uppercase;
   width: 100%;
   height: 100%;
-  padding: 0.25em;
+  padding: 0.4em;
 }
 
 main .descripcion-principal .descripcion-texto {
@@ -59,7 +59,7 @@ main .descripcion-principal .descripcion-texto {
   text-align: justify;
 }
 
-footer .disclaimer-footer .enlaces a:hover p, footer .disclaimer-footer .enlaces a:hover, footer .informacion-footer .redes-sociales ul li:hover a, footer .informacion-footer .redes-sociales ul li:hover .icono, main .indicador ul li a:hover, header .barra-navegacion .menu-navegacion .navbar .container-fluid .active, header .barra-navegacion .menu-navegacion .navbar .container-fluid .nav-link:hover {
+footer .disclaimer-footer .enlaces a:hover p, footer .disclaimer-footer .enlaces a:hover, footer .informacion-footer .redes-sociales ul li:hover a, footer .informacion-footer .redes-sociales ul li:hover .icono, main .menu-barra-nav ul li a:hover, header .barra-navegacion .menu-navegacion .navbar .container-fluid .active, header .barra-navegacion .menu-navegacion .navbar .container-fluid .nav-link:hover {
   color: #ec5d33;
   font-weight: bold;
 }
@@ -175,7 +175,7 @@ main .contacto-datos .subtitulo, main .formulario .subtitulo, main .menu-seccion
   text-transform: uppercase;
   width: 100%;
   height: 100%;
-  padding: 0.25em;
+  padding: 0.4em;
 }
 
 main .descripcion-principal .descripcion-texto {
@@ -189,7 +189,7 @@ main .descripcion-principal .descripcion-texto {
   text-align: justify;
 }
 
-footer .disclaimer-footer .enlaces a:hover p, footer .disclaimer-footer .enlaces a:hover, footer .informacion-footer .redes-sociales ul li:hover a, footer .informacion-footer .redes-sociales ul li:hover .icono, main .indicador ul li a:hover, header .barra-navegacion .menu-navegacion .navbar .container-fluid .nav-link:hover, header .barra-navegacion .menu-navegacion .navbar .container-fluid .active {
+footer .disclaimer-footer .enlaces a:hover p, footer .disclaimer-footer .enlaces a:hover, footer .informacion-footer .redes-sociales ul li:hover a, footer .informacion-footer .redes-sociales ul li:hover .icono, main .menu-barra-nav ul li a:hover, header .barra-navegacion .menu-navegacion .navbar .container-fluid .nav-link:hover, header .barra-navegacion .menu-navegacion .navbar .container-fluid .active {
   color: #ec5d33;
   font-weight: bold;
 }
@@ -267,6 +267,9 @@ main .linea-fotos .imagen-linea {
   background-size: 100%;
   border-radius: 0 10px;
 }
+main .linea-fotos .imagen-linea .texto-imagen {
+  display: none;
+}
 main .linea-fotos .imagen-linea:hover .texto-imagen {
   width: 100%;
   height: 100%;
@@ -282,9 +285,6 @@ main .linea-fotos .imagen-linea:hover .texto-imagen {
   background-color: #f4f4f4;
   border-radius: 0 10px;
   opacity: 90%;
-}
-main .linea-fotos .texto-imagen {
-  display: none;
 }
 main .linea-fotos .imagen-linea-uno {
   background-image: url("../imagenes/menu/menu-sopa.png");
@@ -381,12 +381,12 @@ main .menu-seccion .menu-container .menu-tarjeta .menu-precio {
   background-color: #efe3de;
   border-radius: 0 5px;
 }
-main .indicador {
+main .menu-barra-nav {
   position: sticky;
   bottom: 0;
   z-index: 9;
 }
-main .indicador ul {
+main .menu-barra-nav ul {
   width: 100%;
   margin: 0;
   background-color: #f4f4f4;
@@ -396,11 +396,11 @@ main .indicador ul {
   justify-content: center;
   flex-wrap: wrap;
 }
-main .indicador ul li {
+main .menu-barra-nav ul li {
   padding: 0.3em;
   margin: 0 0.5em;
 }
-main .indicador ul li a {
+main .menu-barra-nav ul li a {
   width: 100%;
   color: #101c21;
   font-family: "EB Garamond", serif;
@@ -494,7 +494,7 @@ main .menu-seccion .menu-subtitulo .subtitulo-texto, main .formulario .subtitulo
   text-transform: uppercase;
   width: 100%;
   height: 100%;
-  padding: 0.25em;
+  padding: 0.4em;
 }
 
 main .descripcion-principal .descripcion-texto {
@@ -508,7 +508,7 @@ main .descripcion-principal .descripcion-texto {
   text-align: justify;
 }
 
-footer .disclaimer-footer .enlaces a:hover p, footer .disclaimer-footer .enlaces a:hover, footer .informacion-footer .redes-sociales ul li:hover a, footer .informacion-footer .redes-sociales ul li:hover .icono, header .barra-navegacion .menu-navegacion .navbar .container-fluid .nav-link:hover, header .barra-navegacion .menu-navegacion .navbar .container-fluid .active, main .indicador ul li a:hover {
+footer .disclaimer-footer .enlaces a:hover p, footer .disclaimer-footer .enlaces a:hover, footer .informacion-footer .redes-sociales ul li:hover a, footer .informacion-footer .redes-sociales ul li:hover .icono, header .barra-navegacion .menu-navegacion .navbar .container-fluid .nav-link:hover, header .barra-navegacion .menu-navegacion .navbar .container-fluid .active, main .menu-barra-nav ul li a:hover {
   color: #ec5d33;
   font-weight: bold;
 }
@@ -653,7 +653,7 @@ main .menu-seccion .menu-subtitulo .subtitulo-texto, main .formulario .subtitulo
   text-transform: uppercase;
   width: 100%;
   height: 100%;
-  padding: 0.25em;
+  padding: 0.4em;
 }
 
 main .descripcion-principal .descripcion-texto {
@@ -667,7 +667,7 @@ main .descripcion-principal .descripcion-texto {
   text-align: justify;
 }
 
-header .barra-navegacion .menu-navegacion .navbar .container-fluid .nav-link:hover, header .barra-navegacion .menu-navegacion .navbar .container-fluid .active, main .indicador ul li a:hover, footer .informacion-footer .redes-sociales ul li:hover .icono, footer .informacion-footer .redes-sociales ul li:hover a, footer .disclaimer-footer .enlaces a:hover, footer .disclaimer-footer .enlaces a:hover p {
+header .barra-navegacion .menu-navegacion .navbar .container-fluid .nav-link:hover, header .barra-navegacion .menu-navegacion .navbar .container-fluid .active, main .menu-barra-nav ul li a:hover, footer .informacion-footer .redes-sociales ul li:hover .icono, footer .informacion-footer .redes-sociales ul li:hover a, footer .disclaimer-footer .enlaces a:hover, footer .disclaimer-footer .enlaces a:hover p {
   color: #ec5d33;
   font-weight: bold;
 }
@@ -760,7 +760,7 @@ main .linea-fotos .imagen-linea:hover, main .menu-seccion .menu-container .menu-
     font-size: 32px;
   }
   header .barra-navegacion .logo-titulo .titulo .contenedor-titulo .titulo-secundario {
-    font-size: 12.5px;
+    font-size: 12px;
   }
   header .barra-navegacion .menu-navegacion .navbar .container-fluid .offcanvas {
     width: 50%;
@@ -791,7 +791,7 @@ main .linea-fotos .imagen-linea:hover, main .menu-seccion .menu-container .menu-
     padding-left: 4%;
   }
   main section:first-child {
-    padding-top: 50px;
+    padding-top: 56px;
   }
   main .linea-fotos .imagen-linea {
     width: 240px;
@@ -823,7 +823,7 @@ main .linea-fotos .imagen-linea:hover, main .menu-seccion .menu-container .menu-
   }
   main .menu-seccion .menu-subtitulo {
     position: sticky;
-    top: 50px;
+    top: 56px;
   }
   main .galeria-container {
     padding: 1em 1%;
